@@ -14,6 +14,7 @@ import NumList from './src/numlist';
 import Input from './src/input';
 import Picker from './src/picker';
 import Steak from './assets/images/steak.jpg';
+import Modal from './src/modal'
 
 class App extends Component {
 
@@ -111,12 +112,13 @@ class App extends Component {
                         ))
                     }
                 </ScrollView> */}
-                <Image
+                {/*<Image
                     style={styles.image}
                     source={{ uri: 'https://picsum.photos/id/237/200/300' }}
                     resizeMode="contain"
                     onLoadEnd={() => alert("Image loaded")}
-                />
+                />*/}
+                <Modal />
             </View>
         );
     }
