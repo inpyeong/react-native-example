@@ -113,7 +113,9 @@ class App extends Component {
                 </ScrollView> */}
                 <Image
                     style={styles.image}
-                    source={Steak}
+                    source={{ uri: 'https://picsum.photos/id/237/200/300' }}
+                    resizeMode="contain"
+                    onLoadEnd={() => alert("Image loaded")}
                 />
             </View>
         );
@@ -156,8 +158,9 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     image: {
+        backgroundColor: 'red',
         width: '100%',
-        height: 300,
+        height: 700,
     },
 });
 
