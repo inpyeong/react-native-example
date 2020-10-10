@@ -6,6 +6,7 @@
  * @flow
  */
 
+import 'react-native-gesture-handler';
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ScrollView, Button, TextInput, Image} from 'react-native';
 import Header from './src/header';
